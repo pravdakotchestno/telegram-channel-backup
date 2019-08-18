@@ -11,7 +11,7 @@ parser.add_argument('--api_key')
 parser.add_argument('--session')
 parser.add_argument('--from_channel', default = None)
 parser.add_argument('--to_channel', default = None)
-parser.add_argument('action', choices = ['print_channels', 'forward_posts'])
+parser.add_argument('action', choices = ['retrieve_channels', 'forward_posts'])
 args = parser.parse_args()
 
 print('Connecting to the Telegram...')
@@ -27,7 +27,7 @@ except Exception as e:
 	print("Couldn't connect to the Telegram:", e)
 	exit(1)
 
-def print_channels():
+def retrieve_channels():
     table = Texttable()
     table = table.header(['ID', 'Channel title', 'Username'])
     table = table.set_cols_width([12, 32, 33])
