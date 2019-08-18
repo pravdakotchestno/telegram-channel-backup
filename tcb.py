@@ -1,8 +1,6 @@
 from telethon.sync import TelegramClient
 from texttable import Texttable
 from telethon.errors.rpcerrorlist import MessageIdInvalidError
-import asyncio
-import socks
 import argparse
 from timeit import default_timer as timer
 
