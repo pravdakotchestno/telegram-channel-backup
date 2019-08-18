@@ -1,4 +1,4 @@
-# telegram-channel-cloner
+# telegram-channel-backup
 Tool for public/private telegram channel backup.
 
 Want to save some stuff from channel which is about to be removed, but manual forwarding takes too long?
