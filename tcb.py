@@ -1,10 +1,10 @@
 from telethon.sync import TelegramClient
 from texttable import Texttable
 from telethon.errors.rpcerrorlist import MessageIdInvalidError
-import argparse
+from argparse import ArgumentParser
 from timeit import default_timer as timer
 
-parser = argparse.ArgumentParser(description = 'Simple telegram channel backup utility.')
+parser = ArgumentParser(description = 'Simple telegram channel backup utility.')
 parser.add_argument('--api_key')
 parser.add_argument('--session')
 parser.add_argument('--from_channel', default = None)
